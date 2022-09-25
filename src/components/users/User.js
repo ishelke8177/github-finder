@@ -26,7 +26,6 @@ const SingleUser = ({ match }) => {
     following,
     public_repos,
     public_gists,
-    hireable,
   } = user;
 
   return (
@@ -34,12 +33,6 @@ const SingleUser = ({ match }) => {
       <Link to="/" className="btn btn-light">
         Back to search
       </Link>
-      Hireable:{' '}
-      {hireable ? (
-        <i className="fas fa-check text-success" />
-      ) : (
-        <i className="fas fa-times-circle text-danger" />
-      )}
       <div className="card grid-2">
         <div className="all-center">
           <img
