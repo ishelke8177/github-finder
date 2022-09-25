@@ -1,3 +1,3 @@
-tech stack - React(ContextAPI + hooks) \
+tech stack - React \
 API used - GIthub API \
-Hosted Link - https://gentle-douhua-ee4277.netlify.app
+Hosted Link - https://idyllic-alpaca-fae60e.netlify.app
