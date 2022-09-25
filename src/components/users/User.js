@@ -46,18 +46,25 @@ const SingleUser = ({ match }) => {
           <p>Location: {location}</p>
         </div>
         <div>
-          {bio && (
+          {bio ? (
             <Fragment>
               <h2>
                 <strong>Bio: </strong>
               </h2>
               <p>{bio}</p>
-              <a href={html_url} className="btn btn-dark my-1">
-                {' '}
-                Visit GitHub Profile
-              </a>
             </Fragment>
+          ) : (
+            <div>
+              <h2>
+                <strong>Bio: </strong>
+              </h2>
+              <p>No bio found</p>
+            </div>
           )}
+          <a href={html_url} className="btn btn-dark my-1">
+            {' '}
+            Visit GitHub Profile
+          </a>
 
           <ul>
             <li>
